@@ -1,0 +1,17 @@
+### Получить все активные товары
+GET http://localhost:8080/api/products
+Accept: application/json
+
+###
+
+### Получить товар по ID
+GET http://localhost:8080/api/products/1
+Accept: application/json
+
+###
+
+### Несуществующий товар
+GET http://localhost:8080/api/products/99999
+Accept: application/json
+
+###
