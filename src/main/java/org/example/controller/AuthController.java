@@ -23,10 +23,10 @@ public class AuthController {
 
     @GetMapping("/login")
     public String loginPage(@RequestParam(required = false) String error,
-                            @RequestParam(required = false) String logout, // ← добавь это
+                            @RequestParam(required = false) String logout,
                             Model model) {
         if (error != null) model.addAttribute("error", "Неверный email или пароль");
-        if (logout != null) model.addAttribute("logout", true); // ← и это
+        if (logout != null) model.addAttribute("logout", true);
         return "auth/login";
     }
 

@@ -55,7 +55,6 @@ public class CatalogController {
         model.addAttribute("isAuthenticated", isAuthenticated);
         model.addAttribute("isMaker", isMaker);
 
-
         return "products/catalog";
     }
 }
